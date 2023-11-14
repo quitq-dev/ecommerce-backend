@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
-const connectString = `mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.1`;
+const mongoConfig = require("../configs/mongo.config");
+const { host, port, name } = mongoConfig.db;
+const connectString = `mongodb://${host}:${port}/${name}`;
 
 class Database {
   constructor() {
