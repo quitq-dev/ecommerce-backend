@@ -3,6 +3,7 @@
 ###
 POST {{url_dev}}/shop/singUp
 content-type: application/json
+x-api-key: 68352f5799270087abf273dd5fe884d189e668b51402ee9f4b338e58c48f5567a38c6a288815d799fc0da39a9ebe3931f7884796c94ba402caa2b7302f6f851c
 
 {
     "name": "shop e",
